@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espaço Interativo</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+    <!-- Font Awesome - EXCLUIR - Apenas para icones provisórios -->
+    <script src="https://kit.fontawesome.com/bf7e05c402.js" crossorigin="anonymous"></script>    
+    <!-- Progress Bar-->
+    <script src="js/progressbar.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>   
+            <img class="mx-auto d-block" src="img/portalLibras.png">
+        </div>
+    </header>
+
+    <div id="filtro">
+        <div id="container">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a href="#" id="material-menu" onclick="filtrarDiscussao(1)"><img src="img/materiais.png" id="icone1" onclick="mudarIcone(1)"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="cursos-menu" onclick="filtrarDiscussao(2)"><img src="img/academicosOff.png" id="icone2" onclick="mudarIcone(2)"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="linguas-menu" onclick="filtrarDiscussao(3)"><img src="img/librasOff.png" id="icone3" onclick="mudarIcone(3)"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="pesquisa-menu" onclick="filtrarDiscussao(4)"><img src="img/pesquisadorOff.png" id="icone4" onclick="mudarIcone(4)"></a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" id="espaco-interativo-menu" onclick="filtrarDiscussao(5)"><img src="img/espacoOff.png" id="icone5" onclick="mudarIcone(5)"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="botaoCriar">
+        <div id="container">
+            <button type="button" class="btn" onclick="">CRIAR TÓPICO</button>
+        </div>
+    </div>
+
+    <div id="discussao">
+        <div id="container">
+            <div id="row">
+                <div class="card">
+                    <img class="card-img-top" src="img_avatar1.png">
+                    <div class="card-body">
+
+                        <div id="demo" class="collapse">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                            </div>
+                            <a href="#demo" class="btn" data-toggle="collapse">LEIA MAIS...</a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <footer>
+        <div id="rodape">
+            <div class="container">
+                <div class="row">
+                    <img class="" src="img/rodape.png">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
